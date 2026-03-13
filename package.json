@@ -1,12 +1,18 @@
 {
   "name": "chrome-dino-game-clone",
   "version": "1.0.0",
+  "description": "",
   "main": "cactus.js",
+  "homepage": "https://chestnutcapybara.github.io/game",
   "scripts": {
+    "build": "mkdir dist && xcopy *.html dist /Y && xcopy *.js dist /Y && xcopy *.css dist /Y && xcopy imgs dist\\imgs /E /I /Y",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
